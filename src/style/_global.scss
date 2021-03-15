@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+height: 100%;
+margin:0;
+}
+body {
+  color: var(--black);
+  background-color: var(--white);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-700);
+  line-height: var(--line-height-md);
+  padding: 0;
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  &:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.text--primary {
+  color: var(--primary-300);
+}

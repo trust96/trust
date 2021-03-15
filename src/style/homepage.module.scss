@@ -1,0 +1,21 @@
+.container {
+}
+.text {
+
+}
+.buttons {
+  margin-bottom: 32px;
+  @media (min-width: 750px) {
+    margin-bottom: auto;
+  }
+  & button {
+    width: 100%;
+    & svg{
+      margin-right: 12px;
+      font-size: 1.5rem;
+    }
+    @media (min-width: 750px) {
+      width: initial;
+    }
+  }
+}
