@@ -1,0 +1,11 @@
+.stack {
+  display: grid;
+  row-gap: 32px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  @media (min-width: 800px) {
+    column-gap: 84px;
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -4,11 +4,11 @@ import Typography from "../typography/Typography";
 import styles from "./tag.module.scss";
 
 interface Props {
-  className: string;
-  children: React.ReactNode;
+  className?: string;
+  children?: React.ReactNode;
   icon: React.ReactElement;
   name: string;
-  title: string;
+  title?: string;
 }
 
 const Tag = ({ children, className, icon, name, title }: Props) => {

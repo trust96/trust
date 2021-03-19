@@ -12,11 +12,11 @@
   bottom: 50%;
   background-image: linear-gradient(
     to right top,
-    #b392f0,
-    #9976d5,
-    #7f5cbb,
-    #6542a1,
-    #4c2888
+    rgba(179, 146, 240,0.9),
+    rgba(153, 118, 213,0.9),
+    rgba(127, 92, 187,0.9),
+    rgba(101, 66, 161,0.9),
+    rgba(76, 40, 136,0.9)
   );
   border-radius: 25px 0 0 25px;
   color: var(--white);
