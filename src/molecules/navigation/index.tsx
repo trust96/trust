@@ -14,13 +14,17 @@ const Navigation = ({}: Props) => {
 
   const [isActive, setIsActive] = useState(false);
   return (
-    <nav className={` ${styles.nav} ${isActive && styles.active}`}>
+    <nav
+      className={` ${styles.nav} ${isActive && styles.active}`}
+      onMouseEnter={() => setIsActive((prev) => !prev)}
+      onMouseLeave={() => setIsActive((prev) => !prev)}
+      onClick={() => setIsActive((prev) => !prev)}
+    >
       <Typography
         tag="span"
         variant="para"
         para="body1"
         className={`${styles.menu}`}
-        onClick={() => setIsActive((prev) => !prev)}
       >
         MENU
       </Typography>

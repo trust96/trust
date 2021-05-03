@@ -8,9 +8,11 @@ import {
   AiOutlineFileText,
   AiOutlineFolderView,
 } from "react-icons/ai";
+import { useRouter } from "next/router";
 interface Props {}
 
 const index = ({}: Props) => {
+  const router = useRouter();
   return (
     <>
       <div className={` row ${styles.container}`}>
@@ -40,22 +42,30 @@ const index = ({}: Props) => {
               color="subtle"
               title="terziary"
             >
-              E’ iniziato come un hobby e il resto velo potete immaginare. la di
-              imparare questo mondo
+              E’ iniziato come un hobby e il resto velo potete immaginare. Amo
+              il computer e tutto cio' che lo riguarda.
             </Typography>
           </div>
           <div className={`${styles.buttons}`}>
-            <Button
-              className="mb-2 me-md-3"
-              variant="primary"
-              icon={<AiOutlineDownload />}
+            <form
+              className="d-inline"
+              method="get"
+              action="/cv.pdf"
+              target="_blank"
             >
-              Download CV
-            </Button>
+              <Button
+                className="mb-2 me-md-3"
+                variant="primary"
+                icon={<AiOutlineDownload />}
+              >
+                Download CV
+              </Button>
+            </form>
             <Button
               className={` ${styles.secondary}`}
               variant="outline-primary"
               icon={<AiOutlineFileText />}
+              onClick={() => router.push("/resume")}
             >
               Resume
             </Button>

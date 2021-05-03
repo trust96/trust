@@ -1,5 +1,4 @@
 import React from "react";
-import { IconType } from "react-icons";
 import styles from "./styles.module.scss";
 interface Props {
   variant?: "primary" | "outline-primary";

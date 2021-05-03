@@ -12,7 +12,7 @@ interface Props {
   src: string;
   challenges: string;
   projectName: string;
-  url: string;
+  url?: string;
 }
 
 const Detail = ({

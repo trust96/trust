@@ -44,6 +44,20 @@ import Card from "../molecules/card";
 import styles from "../style/stack.module.scss";
 const dummyText =
   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos asperiores laboriosam optio eveniet cupiditate fugit, eos totam quidem eius doloribus esse repudiandae officia quos assumenda rerum dolore soluta laborum in? Laborum hic recusandae tempora vel, aliquam saepe sint minus possimus neque similique quos suscipit facilis consequuntur? Veniam incidunt eveniet illum earum ";
+
+const data = {
+  html:
+    "HTML is where it all started. It was love at first sight. Even if this mark-up language seems simple in the beginning, the more you deep down, the more you understand that it has its complexities.",
+  pug:
+    "Pug comes to rescue when Html is just not enough because too much Html can be difficult to maintain.",
+  css: `You don't really have that much of a choice when it comes to formating your Html. Only three words "i love css"`,
+  sass:
+    "css can be quite hard to deal with when your application is big. that is why i use sass",
+  bootstrap:
+    "Bootstrap saves time. I am not a proud user, but i have to admit that it saves time",
+  tailwind: "tailwind saves a lot of time.",
+  styledComponents: `it is not my favorite way of styling react components, but i have to admit that it is very useful`,
+};
 interface Props {}
 
 const mystack = (props: Props) => {
@@ -67,15 +81,15 @@ const mystack = (props: Props) => {
       >
         <Accordion name="Mark Up" icon={<AiOutlineHtml5 />}>
           <Tag icon={<AiFillHtml5 />} name="html" title="Html5">
-            {dummyText}
+            {data.html}
           </Tag>
           <Tag icon={<AiFillTool />} name="pug" title="Pug">
-            {dummyText}
+            {data.pug}
           </Tag>
         </Accordion>
         <Accordion name="Styling" icon={<SiCss3 />}>
           <Tag icon={<SiCss3 />} name="css" title="Css3">
-            {dummyText}
+            {data.css}
           </Tag>
           <Tag icon={<AiFillTool />} name="scss" title="Scss">
             {dummyText}
