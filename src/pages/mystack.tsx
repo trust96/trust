@@ -46,17 +46,30 @@ const dummyText =
   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos asperiores laboriosam optio eveniet cupiditate fugit, eos totam quidem eius doloribus esse repudiandae officia quos assumenda rerum dolore soluta laborum in? Laborum hic recusandae tempora vel, aliquam saepe sint minus possimus neque similique quos suscipit facilis consequuntur? Veniam incidunt eveniet illum earum ";
 
 const data = {
-  html:
-    "HTML is where it all started. It was love at first sight. Even if this mark-up language seems simple in the beginning, the more you deep down, the more you understand that it has its complexities.",
-  pug:
-    "Pug comes to rescue when Html is just not enough because too much Html can be difficult to maintain.",
-  css: `You don't really have that much of a choice when it comes to formating your Html. Only three words "i love css"`,
-  sass:
-    "css can be quite hard to deal with when your application is big. that is why i use sass",
-  bootstrap:
-    "Bootstrap saves time. I am not a proud user, but i have to admit that it saves time",
-  tailwind: "tailwind saves a lot of time.",
-  styledComponents: `it is not my favorite way of styling react components, but i have to admit that it is very useful`,
+  frontend: {
+    html:
+      "HTML is where it all started. It was love at first sight. Even if this mark-up language seems simple in the beginning, the more you deep down, the more you understand that it has its complexities.",
+    pug:
+      "Pug comes to rescue when Html is just not enough because too much Html can be difficult to maintain.",
+    css: `You don't really have that much of a choice when it comes to formating your Html. Only three words "i love css"`,
+    sass:
+      "css can be quite hard to deal with when your application is big. that is why i use sass for a modular architechture",
+    bootstrap:
+      "Bootstrap saves time. I am not a proud user, but i have to admit that it saves time",
+    tailwind: "tailwind saves a lot of time.",
+    styledComponents: `it is not my favorite way of styling react components, but i have to admit that it is very useful`,
+    cssModule: "it is a better alternative to styled components",
+    redux: "i have already used it, but it is not enough",
+    graphql: "definitly in my list",
+    typescript:
+      "Typescript is a superset of javascript and with its intellisense it just make life easier",
+    javascript: "",
+    react: "",
+    nextjs: "",
+  },
+  backend: {},
+  ui: {},
+  bonus: {},
 };
 interface Props {}
 
@@ -81,54 +94,51 @@ const mystack = (props: Props) => {
       >
         <Accordion name="Mark Up" icon={<AiOutlineHtml5 />}>
           <Tag icon={<AiFillHtml5 />} name="html" title="Html5">
-            {data.html}
+            {data.frontend.html}
           </Tag>
           <Tag icon={<AiFillTool />} name="pug" title="Pug">
-            {data.pug}
+            {data.frontend.pug}
           </Tag>
         </Accordion>
         <Accordion name="Styling" icon={<SiCss3 />}>
           <Tag icon={<SiCss3 />} name="css" title="Css3">
-            {data.css}
+            {data.frontend.css}
           </Tag>
-          <Tag icon={<AiFillTool />} name="scss" title="Scss">
-            {dummyText}
+          <Tag icon={<AiFillTool />} name="sass" title="Scss">
+            {data.frontend.sass}
           </Tag>
           <Tag icon={<SiBootstrap />} name="bootstrap" title="Bootstrap">
-            {dummyText}
+            {data.frontend.bootstrap}
           </Tag>
           <Tag icon={<SiTailwindcss />} name="tailwind" title="Tailwind">
-            {dummyText}
+            {data.frontend.tailwind}
           </Tag>
           <Tag
             icon={<SiStyledComponents />}
             name="styled-components"
             title="Styled-components"
           >
-            {dummyText}
+            {data.frontend.styledComponents}
           </Tag>
           <Tag
             icon={<AiFillTool />}
             name="css/scss modules"
             title="Css/Scss modules"
           >
-            {dummyText}
+            {data.frontend.cssModule}
           </Tag>
         </Accordion>
         <Accordion name="Dynamic" icon={<SiJavascript />}>
           <Tag icon={<SiJavascript />} name="javascript" title="Javascript">
-            {dummyText}
+            {data.frontend.javascript}
           </Tag>
           <Tag icon={<SiTypescript />} name="typescript" title="Typescript">
-            {dummyText}
+            {data.frontend.typescript}
           </Tag>
           <Tag icon={<SiReact />} name="react" title="React">
             {dummyText}
           </Tag>
           <Tag icon={<SiNextDotJs />} name="nextjs" title="Neaxtjs">
-            {dummyText}
-          </Tag>
-          <Tag name="react native" icon={<SiReact />} title="React native">
             {dummyText}
           </Tag>
         </Accordion>

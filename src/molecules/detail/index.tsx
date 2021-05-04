@@ -34,7 +34,7 @@ const Detail = ({
     <>
       <div className={`${styles.detail} ${className}`}>
         <div className={` ${styles.image}`}>
-          <img className={`img-fluid ${styles.image}`} src={`${src}`} alt="" />
+          <img className={`img-fluid ${styles.img}`} src={`${src}`} alt="" />
         </div>
 
         <div className={`${styles.text}`}>

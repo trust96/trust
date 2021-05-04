@@ -36,11 +36,11 @@ const Layout = ({ children }: Props) => {
       <Navigation />
       <div className={`${styles.wrapper}`}>
         <div className="container-fluid container-xl">
-          <div className={`${styles.logo}`}>
+          <a href="/" className={`${styles.logo}`}>
             <AiOutlineLeft className={`${styles.left}`} />
             Trust <BsSlash className={`${styles.slash}`} />
             <AiOutlineRight className={`${styles.right}`} />
-          </div>
+          </a>
           <Typography
             className={`${styles.title}`}
             tag="h2"
@@ -53,10 +53,16 @@ const Layout = ({ children }: Props) => {
         </div>
         <div className={`${styles.footer}`}>
           <div className={`${styles.icons}`}>
-            <AiFillGithub className={`${styles.icon}`}></AiFillGithub>
-            <AiFillTwitterCircle
+            <a href="https://github.com/trust96" className={`${styles.icon}`}>
+              <AiFillGithub />
+            </a>
+            <a
+              href="https://twitter.com/Trust56709755"
               className={`${styles.icon}`}
-            ></AiFillTwitterCircle>
+            >
+              {" "}
+              <AiFillTwitterCircle />
+            </a>
           </div>
           <div className={`${styles.copyright}`}>
             <Typography tag="span" variant="para" para="body2">

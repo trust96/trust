@@ -17,10 +17,14 @@
     flex-direction: row;
   }
 }
+.img {
+  width: 100px;
+  height: 100px;
+}
 .image {
   align-self: center;
   margin-bottom: 0.75rem;
-  width: 150px;
+
   @media (min-width: 750px) {
     margin-bottom: 0;
     margin-right: 20px;
@@ -56,11 +60,12 @@
   padding: 20px 32px 52px 32px;
   border-radius: var(--border-radius-lg);
   transform: scale(0);
-  transition: transform ease-in-out 150ms;
+  opacity: 0;
 }
 .content--active {
   transform: scale(1);
-  transition: transform ease-in-out 150ms;
+  opacity: 1;
+  transition: all ease-in-out 150ms;
 }
 .close {
   display: flex;

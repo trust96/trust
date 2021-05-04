@@ -31,36 +31,28 @@ const Navigation = ({}: Props) => {
       <div className={`${styles.container}`}>
         <ul className={`${styles.list}`}>
           <li className={`${styles.item}`}>
-            <Link href="/">
-              <a className={`${styles.link}`} onClick={toggleNav}>
-                <AiOutlineHome className={`${styles.icon}`} />
-                home
-              </a>
-            </Link>
+            <a className={`${styles.link}`} href="/" onClick={toggleNav}>
+              <AiOutlineHome className={`${styles.icon}`} />
+              home
+            </a>
           </li>
           <li className={`${styles.item}`}>
-            <Link href="/mystack">
-              <a className={`${styles.link}`} onClick={toggleNav}>
-                <ImStack className={`${styles.icon}`} />
-                my stack
-              </a>
-            </Link>
+            <a href="/mystack" className={`${styles.link}`} onClick={toggleNav}>
+              <ImStack className={`${styles.icon}`} />
+              my stack
+            </a>
           </li>
           <li className={`${styles.item}`}>
-            <Link href="/resume">
-              <a className={`${styles.link}`} onClick={toggleNav}>
-                <AiOutlineFileText className={`${styles.icon}`} />
-                resume
-              </a>
-            </Link>
+            <a href="/resume" className={`${styles.link}`} onClick={toggleNav}>
+              <AiOutlineFileText className={`${styles.icon}`} />
+              resume
+            </a>
           </li>
           <li className={`${styles.item}`}>
-            <Link href="/myworks">
-              <a className={`${styles.link}`} onClick={toggleNav}>
-                <BiBriefcaseAlt className={`${styles.icon}`} />
-                my works
-              </a>
-            </Link>
+            <a href="/myworks" className={`${styles.link}`} onClick={toggleNav}>
+              <BiBriefcaseAlt className={`${styles.icon}`} />
+              my works
+            </a>
           </li>
         </ul>
       </div>

@@ -24,12 +24,12 @@ const index = ({}: Props) => {
           variant="title"
           title="primary"
         >
-          Ehilà! &#128075;
+          Hi! &#128075;
         </Typography>
         <div className={`col-12 col-lg-6 ${styles.content}`}>
           <div className={` ${styles.text}`}>
             <Typography tag="h1" variant="title" title="primary">
-              Mi chiamo Trust e sono un fullstack developer tedente al
+              My name is trust and i am a fullstack developer, tending towards
               <span className="text--primary"> frontend</span>
             </Typography>
             <div className={`col-12 col-lg-6 d-lg-none ${styles.hero}`}>
@@ -42,8 +42,9 @@ const index = ({}: Props) => {
               color="subtle"
               title="terziary"
             >
-              E’ iniziato come un hobby e il resto velo potete immaginare. Amo
-              il computer e tutto cio' che lo riguarda.
+              It all started as a hobby, well, i leave the rest of the story to
+              your immagination. All i have to say is that i love frontend, i
+              love backend and i love coding!
             </Typography>
           </div>
           <div className={`${styles.buttons}`}>
